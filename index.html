@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zilox Portfolio</title>
+    <title>Lotus Portfolio</title>
     
     <!-- jQuery and jQuery Terminal CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css">
@@ -31,31 +31,30 @@
         $(document).ready(function() {
             $("#terminal").terminal(function(command) {
                 if (command === 'hello') {
-                    this.echo('Hello, welcome to Zilox Portfolio.');
+                    this.echo('Hello, welcome to mtm-x Portfolio.');
                 } else if (command === 'help') {
                     this.echo("Available commands:");
                     this.echo("help: Shows this help message.");
                     this.echo("whoami: About me.");
-                    this.echo("twitter: My Twitter account.");
+                    this.echo("gdev: My Google Developer profile.");
                     this.echo("github: My GitHub profile.");
-                    this.echo("coffee: Support me.");
+                    this.echo("linkedin: My Linkedin profile.");
+                    this.echo("xda: My Xda forums profile.");
                 } else if (command === 'whoami') {
-                    this.echo("Hi, I am Zilox. I am striving to become a skilled hacker.");
-                } else if (command === 'twitter') {
-                    window.open('https://x.com/zilox', '_blank');
+                    this.echo("Hi, I am Thamaraimanlan M (lOTUS). I am striving to learn and become a hacker.");
+                } else if (command === 'gdev') {
+                    window.open('https://g.dev/mtm-x', '_blank');
                 } else if (command === 'github') {
-                    window.open('https://github.com/z110', '_blank');
-                } else if (command === 'coffee') {
-                    window.open('https://sociabuzz.com/zilox/tribe', '_blank');
-                } else if (command === 'youtube') {
-                    window.open('https://youtube.com/playlist?list=PL0...', '_blank'); // Replace with actual playlist URL
-                } else if (command === 'discord') {
-                    window.open('https://discord.gg/m2...', '_blank'); // Replace with actual Discord URL
+                    window.open('https://github.com/mtm-x', '_blank');
+                } else if (command === 'linkedin') {
+                    window.open('https://www.linkedin.com/in/mtm-x', '_blank');
+                } else if (command === 'xda') {
+                    window.open('https://xdaforums.com/m/thamarai-manalan.11353091/', '_blank');
                 } else {
                     this.echo("Unknown command. Type 'help' for a list of available commands.");
                 }
             }, {
-                greetings: 'Welcome to Zilox Portfolio. Please type help for a list of available commands.'
+                greetings: 'Welcome to mtm-x. Please type help for a list of available commands.'
             });
         });
     </script>
