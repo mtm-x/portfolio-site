@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000
+}
+
+.terminal-container {
+  width: 80%;
+  max-width: 800px;
+  border: 2px solid #fff;
+  padding: 20px;
+  background-color: #000;
+}
+
+#terminal {
+  width: 100%;
+}
