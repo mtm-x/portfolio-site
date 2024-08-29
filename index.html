@@ -40,6 +40,7 @@
                     this.echo("github: My GitHub profile.");
                     this.echo("linkedin: My Linkedin profile.");
                     this.echo("xda: My Xda forums profile.");
+                    this.echo("exit: exit the website")
                 } else if (command === 'whoami') {
                     this.echo("Hi, I am Thamaraimanalan M (lOTUS). I am striving to learn and become a hacker.");
                 } else if (command === 'gdev') {
@@ -50,7 +51,11 @@
                     window.open('https://www.linkedin.com/in/mtm-x', '_blank');
                 } else if (command === 'xda') {
                     window.open('https://xdaforums.com/m/thamarai-manalan.11353091/', '_blank');
-                } else {
+                }
+                else if (command == 'exit'){
+                    window.close
+                }
+                else {
                     this.echo("Unknown command. Type 'help' for a list of available commands.");
                 }
             }, {
