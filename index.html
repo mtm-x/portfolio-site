@@ -68,11 +68,10 @@
                 } else if (command == 't2s'){
                     window.open('https://github.com/mtm-x/text-to-speech','_blank');
                 } else if (command == 'resume'){
-                    this.echo("Downloading resume ...");
-                    window.open('mtmresume.pdf','_blank');
+                    this.echo("Downloading resume...");
                     const link = document.createElement('a');
-                    link.href = 'mtmresume.pdf'; 
-                    link.download = 'mtmresume.pdf'; 
+                    link.href = 'assets/mtmresume.pdf'; 
+                    link.download = 'resume.pdf'; 
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
