@@ -36,6 +36,7 @@
                     this.echo("Available commands:");
                     this.echo("help: Shows this help message.");
                     this.echo("whoami: About me.");
+                    this.echo("lsp: List my projects")
                     this.echo("gdev: My Google Developer profile.");
                     this.echo("github: My GitHub profile.");
                     this.echo("linkedin: My Linkedin profile.");
@@ -51,7 +52,33 @@
                     window.open('https://www.linkedin.com/in/mtm-x', '_blank');
                 } else if (command === 'xda') {
                     window.open('https://xdaforums.com/m/thamarai-manalan.11353091/', '_blank');
+
+                } else if (command == 'lsp'){
+                    this.echo("These are the commands to access my projects.");
+                    this.echo("jamsh: WiFi jammer script using shell scripting.");
+                    this.echo("jampy: WiFi jammer script using python.");
+                    this.echo("calpy: A simple GUI calculator using python and tkinter.");
+                    this.echo("t2s: Text to Speech GUI with Google text to speech using python and tkinter.");
+                } else if(command == 'jamsh'){
+                    window.open('https://github.com/mtm-x/wifi-jammer-script','_black');
+                } else if(command == 'jampy'){
+                    window.open('https://github.com/mtm-x/wifijammer-python-script','_blank');
+                } else if (command == 'calpy'){
+                    window.open('https://github.com/mtm-x/python-calculator','_blank');
+                } else if (command == 't2s'){
+                    window.open('https://github.com/mtm-x/text-to-speech','_blank');
+                } else if (command == 'resume'){
+                    this.echo("Downloading resume ...");
+                    window.open('mtmresume.pdf','_blank');
+                    const link = document.createElement('a');
+                    link.href = 'mtmresume.pdf'; 
+                    link.download = 'mtmresume.pdf'; 
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+
                 }
+
                 else if (command == 'exit'){
                     window.close();
                 }
@@ -59,7 +86,7 @@
                     this.echo("Unknown command. Type 'help' for a list of available commands.");
                 }
             }, {
-                greetings: 'Welcome to mtm-x. Please type help for a list of commands.'
+                greetings: 'Welcome to LOTUS portfolio. \nPlease type \'help\' for a list of commands or \'lsp\' for list of projects.\nType \'resume\' to download my resume'
             });
         });
     </script>
