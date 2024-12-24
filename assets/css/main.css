@@ -805,6 +805,13 @@ section,
   position: relative;
   overflow: hidden;
 }
+.portfolio .portfolio-item img {
+  width: 100%; /* Ensures the image spans the width of its container */
+  height: 650px; /* Sets a fixed height for all images */
+  object-fit: cover; /* Ensures images are cropped to fit without distortion */
+  border-radius: 8px; /* Optional: Adds rounded corners for a cleaner look */
+}
+
 
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
@@ -855,6 +862,7 @@ section,
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+
 }
 
 /*--------------------------------------------------------------
@@ -1106,46 +1114,7 @@ section,
   color: var(--contrast-color);
 }
 
-.contact .php-email-form {
-  height: 100%;
-}
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
