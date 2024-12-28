@@ -746,6 +746,33 @@ section,
   font-family: var(--heading-font);
 }
 
+/* Resetting the card image */
+.card {
+  width: 100%;                      /* Make sure the card stretches across the screen */
+  height: auto;                     /* Let the height adjust based on content */
+  display: block;                   /* Block-level element */
+  overflow: hidden;                 /* Hide anything overflowing */
+  position: relative;               /* For proper positioning */
+}
+
+.card-img-top {
+  width: 100% !important;           /* Make the image take the full width of the container */
+  height: 100% !important;          /* Force the image to take full height */
+  object-fit: contain !important;   /* Prevent cropping, and fit the image inside the container */
+  object-position: center center;   /* Center the image */
+  display: block;                   /* Ensure no extra space below the image */
+}
+
+/* For small screen sizes */
+@media (max-width: 767px) {
+  .card-img-top {
+    width: 100% !important;         /* Make sure the image is full width on smaller screens */
+    height: auto !important;        /* Maintain aspect ratio */
+    object-fit: contain !important; /* Avoid cropping */
+  }
+}
+
+
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
   color: var(--contrast-color);
@@ -760,23 +787,13 @@ section,
   margin-right: 0;
 }
 
-@media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 0 10px 0;
-  }
-}
+
 
 .portfolio .portfolio-item {
   position: relative;
   overflow: hidden;
 }
-.portfolio .portfolio-item img {
-  width: 100%; /* Ensures the image spans the width of its container */
-  height: 650px; /* Sets a fixed height for all images */
-  object-fit: cover; /* Ensures images are cropped to fit without distortion */
-  border-radius: 8px; /* Optional: Adds rounded corners for a cleaner look */
-}
+
 
 
 .portfolio .portfolio-item .portfolio-info {
