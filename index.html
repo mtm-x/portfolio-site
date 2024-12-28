@@ -7,6 +7,15 @@
   <title>Thamaraimanalan Verse</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  >
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  defer
+  ></script>
+
 
   <!-- Favicons -->
   <link href="assets/img/lotus_crop.png" rel="icon">
@@ -191,9 +200,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Not yet completed resume part
-          
-        </p>
+        
+        <p>Not yet completed resume part</p>
         <a href="/assets/resume/mtmresume.pdf" download class="download-button">
           Download Resume
         </a>
@@ -263,118 +271,142 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
         <p>These are some of my projects</p>
-      </div><!-- End Section Title -->
+      </div>
 
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Python</li>
-            <li data-filter=".filter-product">Scripts</li>
-            <li data-filter=".filter-branding">QT Applications</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/stm.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Smart Traffic Management (STM) </h4>
-                <p>Uses deep learning for real-time ambulance detection and IoT for traffic light automation</p>
-                <a href="assets/img/stm.png" title="Python" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                <a href="https://github.com/mtm-x/smart-traffic" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/t2s.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Text To Speech</h4>
-                <p>Simple GUI application build with py and tkinter to generate speech from text</p>
-                <a href="assets/img/t2s.png" title="Python" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
-                <a href="https://github.com/mtm-x/text-to-speech" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/wifijam.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WIFI-Jammer.py</h4>
-                <p>A Simple Python script to jam WiFi</p>
-                <a href="assets/img/wifijam.png" title="Scripts" data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
-                <a href="https://github.com/mtm-x/wifijammer-python-script" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/wifijamsh.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WIFI-Jammer.sh</h4>
-                <p>A Simple shell script to jam WiFi</p>
-                <a href="assets/img/wifijamsh.png" title="Scripts" data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
-                <a href="https://github.com/mtm-x/wifi-jammer-script" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/debloaterscript.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>debloater.py</h4>
-                <p>A Simple python script to remove system apps from android devices</p>
-                <a href="assets/img/debloaterscript.png" title="Scripts" data-gallery="portfolio-gallery-product" class="glightbox preview-link"></a>
-                <a href="https://github.com/mtm-x/android-debloater" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+      <div class="container" style="max-width: 800px;">
+        <div id="portfolioCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-category="python">
+              <div class="card">
+                <img src="assets/img/stm.png" class="card-img-top" alt="STM" style="height: 400px; object-fit: cover;">
+                <div class="card-body">
+                  <h4 class="card-title">Smart Traffic Management (STM)</h4>
+                  <p class="card-text">Uses deep learning for real-time ambulance detection and IoT for traffic light automation</p>
+                  <a href="https://github.com/mtm-x/smart-traffic"  class="btn btn-primary" target="_blank">View Project</a>  
+                </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/android.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Android Debloater</h4>
-                <p>Android debloater is a simple GUI application to remove the system apps build with QT </p>
-                <a href="assets/img/android.png" title="QT" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
-                <a href="https://github.com/mtm-x/Android-debloater-app" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            <div class="carousel-item" data-category="qt">
+              <div class="card">
+                <img src="assets/img/qt_new.jpeg" class="card-img-top" alt="QT Communicator" style="height: 400px; object-fit: cover;">
+                <div class="card-body">
+                  <h4 class="card-title">QT Communicator</h4>
+                  <p class="card-text">QT Communicator is a simple, user-friendly chatting application built with Qt Quick (QML) and C++ </p>
+                  <a href="https://github.com/mtm-x/yeagerists-round2" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/qtpycal.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Simple Calculator.py</h4>
-                <p>Simple Calculator using PySide6 library for python and GUI with QT </p>
-                <a href="assets/img/qtpycal.png" title="QT" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
-                <a href="https://github.com/mtm-x/qt-python-calculator" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/cppcalqt.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Simple Calculator.cpp</h4>
-                <p>Simple Calculator using C++ and GUI with QT </p>
-                <a href="assets/img/cppcalqt.png" title="QT" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
-                <a href="https://github.com/mtm-x/CALC" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/qtcom.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>QT Communicator</h4>
-                <p>QT Communicator is a simple, user-friendly chatting application built with Qt Quick (QML) and C++ </p>
-                <a href="assets/img/qtcom.png" title="QT" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
-                <a href="https://github.com/mtm-x/yeagerists-round2" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
 
-            
-          </div><!-- End Portfolio Container -->
+            <div class="carousel-item" data-category="python">
+              <div class="card">
+                <img src="assets/img/tts.png" class="card-img-top" alt="Text To Speech" style="height: 400px; object-fit: cover;">
+                <div class="card-body">
+                  <h4 class="card-title">Text To Speech</h4>
+                  <p class="card-text">Simple GUI application build with py and tkinter to generate speech from text</p>
+                  <a href="https://github.com/mtm-x/text-to-speech"  class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
 
+            <!-- Scripts Projects -->
+            <div class="carousel-item" data-category="scripts">
+              <div class="card">
+                <img src="assets/img/wifijammerpy.png" class="card-img-top" alt="WIFI Jammer" style="height: 400px; object-fit: cover;">
+                <div class="card-body">
+                  <h4 class="card-title">WIFI-Jammer.py</h4>
+                  <p class="card-text">A Simple Python script to jam WiFi</p>
+                  <a href="https://github.com/mtm-x/wifijammer-python-script"  class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-category="scripts">
+              <div class="card">
+                <img src="assets/img/wifijammersh.png" class="card-img-top" alt="WIFI-Jammer.sh" style="height: 400px; object-fit: cover;">
+                <div class="card-body">
+                  <h4 class="card-title">WIFI-Jammer.sh</h4>
+                  <p class="card-text">A Simple shell script to jam WiFi</p>
+                  <a href="https://github.com/mtm-x/wifi-jammer-script"  class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-category="scripts">
+              <div class="card">
+                <img src="assets/img/debloater.png" class="card-img-top" alt="debloater.py" style="height: 400px; object-fit: cover;">
+                <div class="card-body">
+                  <h4 class="card-title">debloater.py</h4>
+                  <p class="card-text">A Simple python script to remove system apps from android devices</p>
+                  <a href="https://github.com/mtm-x/android-debloater"  class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- QT Projects -->
+            <div class="carousel-item" data-category="qt">
+              <div class="card">
+                <img src="assets/img/debloatergui.png" class="card-img-top" alt="Android Debloater" style="height: 400px; object-fit: cover;">
+                <div class="card-body">
+                  <h4 class="card-title">Android Debloater</h4>
+                  <p class="card-text">Android debloater is a simple GUI application to remove system apps built with QT</p>
+                  <a href="https://github.com/mtm-x/Android-debloater-app"  class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-category="qt">
+              <div class="card">
+                <img src="assets/img/qtpycal1.png" class="card-img-top" alt="Simple Calculator.py" style="height: 400px; object-fit: cover;">
+                <div class="card-body">
+                  <h4 class="card-title">Simple Calculator.py</h4>
+                  <p class="card-text">Simple Calculator using PySide6 library for python and GUI with QT</p>
+                  <a href="https://github.com/mtm-x/qt-python-calculator"  class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-category="qt">
+              <div class="card">
+                <img src="assets/img/qtcppcalc.png" class="card-img-top" alt="Simple Calculator.cpp" style="height: 400px; object-fit: cover;">
+                <div class="card-body">
+                  <h4 class="card-title">Simple Calculator.cpp</h4>
+                  <p class="card-text">Simple Calculator using C++ and GUI with QT</p>
+                  <a href="https://github.com/mtm-x/CALC" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
       </div>
-
-    </section><!-- /Portfolio Section -->
+      
+    </section>
+    <style>
+      .card-body .btn-primary {
+        position: relative;
+        z-index: 10;
+      }
+    
+      
+      .carousel-control-prev, .carousel-control-next {
+        z-index: 2; 
+      }
+    </style>
+    
+    
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
