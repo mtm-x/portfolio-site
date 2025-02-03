@@ -308,3 +308,52 @@ footer a:not(.nav-link) {
 .entry-title a {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .container.position-relative {
+    padding: 0 20px;
+  }
+
+  .portfolio-card {
+    flex: 0 0 75vw; 
+  }
+
+  .portfolio-card .card {
+    height: 300px;
+  }
+
+  .portfolio-card img {
+    height: 180px; 
+  }
+
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .carousel-btn.prev {
+    left: -10px;
+  }
+
+  .carousel-btn.next {
+    right: -10px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.portfolio-scroller {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.portfolio-card {
+  scroll-snap-align: start;
+}
