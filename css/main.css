@@ -1,0 +1,310 @@
+html, body {
+  overflow-x: hidden;
+}
+
+/**
+ * Enable smooth scrolling on the whole document
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/**
+ * Add .section to every anchored element for scroll margin
+ */
+.section {
+  scroll-margin-top: 2rem;
+}
+
+/* Header */
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-decoration: none;
+}
+
+@media (min-width: 48em) {
+  .site-title {
+    float: left;
+  }
+}
+
+.nav-link {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.social-nav .nav-link {
+  padding: 0 0.5rem;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.active .nav-link {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Hero (intro) section */
+.intro-title {
+  font-weight: 800;
+}
+
+@-webkit-keyframes animateWave {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.wave-bg {
+  display: block;
+  height: 220px;
+  width: 100%;
+  min-width: 600px;
+  transform-origin: top;
+  -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+          animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  background-image: url("../images/wave-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+img.avatar {
+  border-radius: 30px;
+}
+
+/* Masonary grid for portfolio */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Grid Item */
+.grid-sizer,
+.grid-item {
+  width: 100%;
+}
+
+.grid-item {
+  padding-bottom: 12px;
+}
+
+@media (min-width: 48em) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+  .grid-item {
+    float: left;
+    padding: 6px;
+  }
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+/* Portfolio Carousel */
+.container.position-relative {
+  padding: 0 40px;
+}
+
+.portfolio-scroller {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.portfolio-grid {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card {
+  flex: 0 0 420px; /* Fixed card width */
+  text-decoration: none;
+  scroll-snap-align: start;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-card .card {
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: none;
+}
+
+.portfolio-card img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  background: white;
+}
+
+.card-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.2rem;
+}
+
+.carousel-btn.prev {
+  left: -20px;
+}
+
+.carousel-btn.next {
+  right: -20px;
+}
+
+.carousel-btn:hover {
+  background: #f8f9fa;
+}
+
+/* Hide scrollbar */
+.portfolio-scroller::-webkit-scrollbar {
+  display: none;
+}
+/* Footer section */
+footer a:not(.nav-link) {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Scroll Top */
+#scrolltop {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#scrolltop .btn {
+  padding: 3px 11px;
+  border-radius: 50%;
+}
+
+/* Additional utility styles */
+.container-narrow {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.text-small {
+  font-size: 0.875rem;
+}
+
+.text-uppercase {
+  letter-spacing: 0.05em;
+}
+
+.hover-effect {
+  transition: transform .18s ease-in-out;
+}
+
+.hover-effect:hover {
+  transform: translateY(-2px);
+}
+
+.marker {
+  position: relative;
+  display: inline;
+  width: auto;
+}
+
+.marker-center {
+  padding-right: 0;
+}
+
+.marker:after {
+  content: "";
+  width: 125px;
+  height: 30px;
+  position: absolute;
+  bottom: -25px;
+  right: -30px;
+  background-image: url("../images/marker.svg");
+  background-repeat: no-repeat;
+}
+
+.marker-center:after {
+  bottom: -30px;
+  left: 50%;
+  margin-left: -60px;
+}
+
+@media (max-width: 575.98px) {
+  .marker {
+    padding-right: 0;
+  }
+  .marker:after {
+    bottom: -30px;
+    left: 50%;
+    margin-left: -60px;
+  }
+}
+
+.entry-title a {
+  text-decoration: none;
+}
