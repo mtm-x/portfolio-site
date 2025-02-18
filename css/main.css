@@ -357,3 +357,39 @@ footer a:not(.nav-link) {
 .portfolio-card {
   scroll-snap-align: start;
 }
+
+.bg-qt-gradient {
+  background: linear-gradient(135deg, #41cd52 0%, #1f7c5f 100%);
+}
+
+.text-qt {
+  color: #41cd52 !important;
+}
+
+.badge-warning {
+  background-color: #ffd700;
+}
+
+.bg-iit-gradient {
+  background: linear-gradient(135deg, #3a5f8d 0%, #b30838 100%);
+}
+
+.badge-qt {
+  background-color: #41cd52;
+  color: white;
+}
+
+.badge-python {
+  background-color: #3776ab;
+  color: white;
+}
+
+.badge-modelica {
+  background-color: #e04c00;
+  color: white;
+}
+
+.achievement-list div {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
