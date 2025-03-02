@@ -393,3 +393,33 @@ footer a:not(.nav-link) {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
+.skill-card {
+  transition: all 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+.skill-tag {
+  display: inline-block;
+  background-color: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+.marker-center {
+  position: relative;
+  padding-bottom: 15px;
+}
+.marker-center:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #0d6efd;
+}
