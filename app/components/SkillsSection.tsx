@@ -1,5 +1,5 @@
 export default function SkillsSection() {
-	const skills = ['Python','Git','GitHub','Playing with Raspberry Pi','ROS2(Learning)', 'C (Learning)'];
+	const skills = ['Python','Git','GitHub','Playing with Raspberry Pi','ROS2(Learning)', 'C(Learning)'];
 
 	return (
 		<section className="bg-black py-12 sm:py-20">

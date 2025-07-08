@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Thamaraimanalan',
+	title: "Thamaraimanalan's Portfolio",
 	icons: {
         icon: './portfolio/lotus_crop.png',
     },
@@ -21,23 +21,23 @@ export const metadata: Metadata = {
 		'Welcome to my portfolio! I am passionate about learning Embedded systems, IoT, Edge AI, and Robotics. If it runs Python, I can make it do something cool.',
 	keywords: [
 		'Software Developer',
-		'Web Developer',
-		'Clean Code',
+		'Qt',
+		'Qt Framework',
 		'Simple Design',
-		'JavaScript',
-		'TypeScript',
-		'React',
-		'Next.js',
-		'User Experience',
+		'Python',
+		'C++',
+		'ROS2',
+		'Gazebo',
+		'C',
 		'Problem Solving',
 		'Effective Solutions',
-		'Web Development',
-		'Frontend Development',
-		'Backend Development',
+		'Python GUI',
+		'Raspberry Pi',
+		'Linux',
 		'Thamaraimanalan',
 	],
-	authors: [{ name: 'Thamaraimanalan' }],
-	creator: 'Thamaraimanalan',
+	authors: [{ name: 'Thamaraimanalan M' }],
+	creator: 'Thamaraimanalan M',
 	openGraph: {
 		title: 'Thamaraimanalan - Portfolio',
 		description: 'I am passionate about learning Embedded systems, IoT, Edge AI, and Robotics. Explore my projects and development approach.',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 		siteName: 'Thamaraimanalan - Portfolio',
 		images: [
 			{
-				url: './portfolio/myself.png',
+				url: './portfolio/og.png',
 				width: 1200,
 				height: 630,
 				alt: 'Thamaraimanalan - Portfolio',
