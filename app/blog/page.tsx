@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import BlogSection from '@/app/components/BlogSection';
+// import BlogSection from '@/app/components/BlogSection';
 import Navigation from '@/app/components/Navigation';
 import UnderConstruction from '@/app/components/UnderConstruction';
 
