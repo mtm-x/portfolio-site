@@ -18,8 +18,8 @@ const blogPosts: BlogPost[] = [
 		title: "NXP AIM 2025 - Regional Finalist in AI Mobility Challenge",
 		date: "2025-01-20",
 		category: "Achievement",
-		excerpt: "Selected as regional finalist in NXP's Artificial Intelligence in Mobility competition, competing in robotic treasure hunt challenges using ROS2, SLAM, and computer vision.",
-		content: `I recently took part in NXP AIM 2025 (Artificial Intelligence in Mobility) and managed to reach the regional finals. Though I didn't win, just getting selected from all the participants felt pretty amazing.
+		excerpt: "Selected as regional finalist in NXP&apos;s Artificial Intelligence in Mobility competition, competing in robotic treasure hunt challenges using ROS2, SLAM, and computer vision.",
+		content: `I recently took part in NXP AIM 2025 (Artificial Intelligence in Mobility) and managed to reach the regional finals. Though I didn&apos;t win, just getting selected from all the participants felt pretty amazing.
 
 AIM is basically a competition where engineering students get to work with AI and robotics for mobility applications. We had to build mobile robot prototypes using technologies like AI/ML, object recognition, sensors, computer vision, and obstacle avoidance.
 
@@ -38,7 +38,7 @@ What I worked with:
 
 This experience really pushed my robotics and AI knowledge forward. Working with SLAM to map unknown environments and using Nav2 for autonomous navigation was tough but really rewarding. Getting to work with both simulation in Gazebo and real hardware gave me a much better understanding of how mobile robotics actually works.
 
-Even though I didn't win the regional finals, I learned a ton about AI applications in mobility and it definitely strengthened my interest in robotics and autonomous systems.`,
+Even though I didn&apos;t win the regional finals, I learned a ton about AI applications in mobility and it definitely strengthened my interest in robotics and autonomous systems.`,
 		tags: ["NXP AIM", "Robotics", "ROS2", "SLAM", "Computer Vision", "Nav2", "AI/ML", "Regional Finalist"]
 	},
 	{
@@ -47,7 +47,7 @@ Even though I didn't win the regional finals, I learned a ton about AI applicati
 		date: "2025-01-15",
 		category: "Learning",
 		excerpt: "Enrolled in an intensive embedded systems course from Pyjamabrah, taught by Google engineers Piyush Itankar and Mahmad Bharmal.",
-		content: `Currently taking an embedded systems course from Pyjamabrah, taught by Piyush Itankar and Mahmad Bharmal who both work at Google. It's been a solid learning experience so far.
+		content: `Currently taking an embedded systems course from Pyjamabrah, taught by Piyush Itankar and Mahmad Bharmal who both work at Google. It&apos;s been a solid learning experience so far.
 
 The course covers the fundamentals you need for embedded systems development, which is exactly what I was looking for.
 
@@ -77,16 +77,16 @@ The C certification was a good milestone. Now diving into pointers, which is whe
 
 🏆 Competition Highlights:
 - Competed against 100+ international teams
-- Officially recognized in Qt Group's winners announcement
+- Officially recognized in Qt Group&apos;s winners announcement
 - Demonstrated advanced Qt framework architecture skills
 - Showcased QML development expertise
 - Global ranking achievement
 
-The competition challenged participants to build innovative applications using Qt framework, pushing the boundaries of what's possible with cross-platform development. My project focused on creating a sophisticated GUI application that demonstrated both technical prowess and user experience design.
+The competition challenged participants to build innovative applications using Qt framework, pushing the boundaries of what&apos;s possible with cross-platform development. My project focused on creating a sophisticated GUI application that demonstrated both technical prowess and user experience design.
 
 This achievement validates my expertise in Qt development and opens up new opportunities in the Qt ecosystem. The recognition from Qt Group is particularly meaningful as it comes from the creators of the framework themselves.
 
-You can view my official certificate and the competition details through the Qt Group's announcement. [Download my Qt-athon 2024 certificate](https://drive.google.com/file/d/10yc-ymNhzj3aUN3YqxHb3NGKw4bioexQ/view?usp=sharing). This experience has motivated me to continue contributing to the Qt community and exploring advanced framework capabilities.`,
+You can view my official certificate and the competition details through the Qt Group&apos;s announcement. [Download my Qt-athon 2024 certificate](https://drive.google.com/file/d/10yc-ymNhzj3aUN3YqxHb3NGKw4bioexQ/view?usp=sharing). This experience has motivated me to continue contributing to the Qt community and exploring advanced framework capabilities.`,
 		tags: ["Qt Framework", "Competition", "QML", "GUI Development", "Global Recognition"]
 	},
 	{
@@ -105,7 +105,7 @@ Key features:
 - Network security research tool
 - Educational purposes only
 
-This project helped me understand the importance of network security and how to protect against such attacks. It's important to note this should only be used for educational purposes and on networks you own or have permission to test.`,
+This project helped me understand the importance of network security and how to protect against such attacks. It&apos;s important to note this should only be used for educational purposes and on networks you own or have permission to test.`,
 		tags: ["Linux", "Network Security", "WiFi", "C++"]
 	},
 	{
@@ -124,7 +124,7 @@ The Python version offers:
 
 Working with Python for network operations taught me about socket programming, packet manipulation, and how different programming languages handle low-level network operations differently than C++.
 
-This project reinforced my understanding of both Python programming and network security fundamentals. It's designed purely for educational use and understanding how wireless networks operate.`,
+This project reinforced my understanding of both Python programming and network security fundamentals. It&apos;s designed purely for educational use and understanding how wireless networks operate.`,
 		tags: ["Python", "Network Security", "WiFi", "Scripting"]
 	},
 	{
@@ -141,7 +141,7 @@ The shell script approach taught me:
 - How to interact with network interfaces from command line
 - Linux networking tools and utilities
 
-It's fascinating how different tools can achieve similar results. The shell script version is probably the most lightweight of all my WiFi jammer implementations, requiring minimal dependencies and running efficiently on any Linux system.
+It&apos;s fascinating how different tools can achieve similar results. The shell script version is probably the most lightweight of all my WiFi jammer implementations, requiring minimal dependencies and running efficiently on any Linux system.
 
 This project improved my Linux system administration skills and deepened my understanding of how network tools work at the command line level.`,
 		tags: ["Shell Script", "Bash", "Linux", "Network Security"]
@@ -154,7 +154,7 @@ This project improved my Linux system administration skills and deepened my unde
 		excerpt: "A Python script to remove system apps from Android devices using ADB commands and automation.",
 		content: `Developed a Python script that automates the removal of system apps from Android devices. This was born out of frustration with bloatware on Android phones and wanting to clean them up programmatically.
 
-The script uses ADB (Android Debug Bridge) to communicate with Android devices and remove unwanted system applications that can't normally be uninstalled through the regular interface.
+The script uses ADB (Android Debug Bridge) to communicate with Android devices and remove unwanted system applications that can&apos;t normally be uninstalled through the regular interface.
 
 Features implemented:
 - Automated ADB command execution
@@ -163,7 +163,7 @@ Features implemented:
 - Batch processing of multiple apps
 - User-friendly command line interface
 
-This project taught me about Android's system architecture, ADB protocol, and how to build useful automation tools. It also reinforced my Python skills, especially working with subprocess management and command-line tools.
+This project taught me about Android&apos;s system architecture, ADB protocol, and how to build useful automation tools. It also reinforced my Python skills, especially working with subprocess management and command-line tools.
 
 The script has been helpful for cleaning up personal devices and understanding how Android package management works under the hood.`,
 		tags: ["Python", "Android", "ADB", "Automation", "Mobile"]
@@ -190,10 +190,10 @@ The most challenging part was optimizing the detection algorithms to minimize fa
 		title: "First Steps with ROS2 and Robotics",
 		date: "2024-11-28",
 		category: "Learning",
-		excerpt: "Started my journey into robotics with ROS2. Here's what I learned in my first month of exploring robot operating systems.",
+		excerpt: "Started my journey into robotics with ROS2. Here&apos;s what I learned in my first month of exploring robot operating systems.",
 		content: `Diving into ROS2 has been an exciting challenge! Coming from embedded systems background, the distributed nature of ROS2 nodes was initially confusing but incredibly powerful once understood.
 
-What I've learned so far:
+What I&apos;ve learned so far:
 - Node communication through topics and services
 - Launch files and parameter management
 - Integration with Gazebo for simulation
@@ -208,7 +208,7 @@ Currently working on a simple autonomous navigation project using a simulated ro
 		date: "2024-10-20",
 		category: "Achievement",
 		excerpt: "Successfully completed an advanced Python certification focusing on embedded systems and IoT applications.",
-		content: `Just finished an intensive Python certification program that focused specifically on embedded systems and IoT applications. This wasn't your typical Python course - it dove deep into hardware interfacing, real-time systems, and optimization for resource-constrained environments.
+		content: `Just finished an intensive Python certification program that focused specifically on embedded systems and IoT applications. This wasn&apos;t your typical Python course - it dove deep into hardware interfacing, real-time systems, and optimization for resource-constrained environments.
 
 Key topics covered:
 - GPIO programming and hardware interfaces
@@ -331,7 +331,7 @@ export default function BlogSection() {
 										{post.id === 1 ? (
 											// NXP AIM 2025 post
 											<div>
-												I recently took part in NXP AIM 2025 (Artificial Intelligence in Mobility) and managed to reach the regional finals. Though I didn't win, just getting selected from all the participants felt pretty amazing.
+												I recently took part in NXP AIM 2025 (Artificial Intelligence in Mobility) and managed to reach the regional finals. Though I didn&apos;t win, just getting selected from all the participants felt pretty amazing.
 												<br /><br />
 												AIM is basically a competition where engineering students get to work with AI and robotics for mobility applications. We had to build mobile robot prototypes using technologies like AI/ML, object recognition, sensors, computer vision, and obstacle avoidance.
 												<br /><br />
@@ -359,12 +359,12 @@ export default function BlogSection() {
 												<br /><br />
 												This experience really pushed my robotics and AI knowledge forward. Working with SLAM to map unknown environments and using Nav2 for autonomous navigation was tough but really rewarding. Getting to work with both simulation in Gazebo and real hardware gave me a much better understanding of how mobile robotics actually works.
 												<br /><br />
-												Even though I didn't win the regional finals, I learned a ton about AI applications in mobility and it definitely strengthened my interest in robotics and autonomous systems.
+												Even though I didn&apos;t win the regional finals, I learned a ton about AI applications in mobility and it definitely strengthened my interest in robotics and autonomous systems.
 											</div>
 										) : post.id === 2 ? (
 											// C Programming Course post
 											<div>
-												Currently taking an embedded systems course from Pyjamabrah, taught by Piyush Itankar and Mahmad Bharmal who both work at Google. It's been a solid learning experience so far.
+												Currently taking an embedded systems course from Pyjamabrah, taught by Piyush Itankar and Mahmad Bharmal who both work at Google. It&apos;s been a solid learning experience so far.
 												<br /><br />
 												The course covers the fundamentals you need for embedded systems development, which is exactly what I was looking for.
 												<br /><br />
@@ -397,7 +397,7 @@ export default function BlogSection() {
 												<br />
 												- Competed against 100+ international teams
 												<br />
-												- Got officially recognized in Qt Group's winners announcement
+												- Got officially recognized in Qt Group&apos;s winners announcement
 												<br />
 												- Showed off advanced Qt framework architecture skills
 												<br />
@@ -405,11 +405,11 @@ export default function BlogSection() {
 												<br />
 												- Achieved global ranking
 												<br /><br />
-												The competition challenged us to build innovative applications using Qt framework, really pushing what's possible with cross-platform development. My project focused on creating a sophisticated GUI application that showed both technical skills and good user experience design.
+												The competition challenged us to build innovative applications using Qt framework, really pushing what&apos;s possible with cross-platform development. My project focused on creating a sophisticated GUI application that showed both technical skills and good user experience design.
 												<br /><br />
-												This achievement feels really good because it validates my Qt development skills and opens up new opportunities in the Qt ecosystem. Getting recognition from Qt Group is especially meaningful since they're the ones who created the framework.
+												This achievement feels really good because it validates my Qt development skills and opens up new opportunities in the Qt ecosystem. 												Getting recognition from Qt Group is especially meaningful since they&apos;re the ones who created the framework.
 												<br /><br />
-												You can check out my official certificate and the competition details through Qt Group's announcement. This whole experience has motivated me to keep contributing to the Qt community and explore more advanced framework capabilities.
+												You can check out my official certificate and the competition details through Qt Group&apos;s announcement. This whole experience has motivated me to keep contributing to the Qt community and explore more advanced framework capabilities.
 											</div>
 										) : (
 											// Default content rendering for other posts

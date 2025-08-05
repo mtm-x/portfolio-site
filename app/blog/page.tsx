@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import BlogSection from '@/app/components/BlogSection';
 import Navigation from '@/app/components/Navigation';
+import UnderConstruction from '@/app/components/UnderConstruction';
 
 export const metadata: Metadata = {
 	title: "Blog - Thamaraimanalan's Portfolio",
@@ -25,9 +26,12 @@ export default function BlogPage() {
 	return (
 		<main className="min-h-screen bg-black">
 			<Navigation />
+			<UnderConstruction />
+			{/* Temporarily hidden - will reveal later
 			<div className="pt-12">
 				<BlogSection />
 			</div>
+			*/}
 		</main>
 	);
 }

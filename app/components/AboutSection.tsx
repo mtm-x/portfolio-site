@@ -32,7 +32,7 @@ export default function AboutSection() {
 						
 						<div className="space-y-4 text-gray-400 leading-relaxed">
 							<p>
-								I'm passionate about the intersection of hardware and software, specializing in 
+								I&apos;m passionate about the intersection of hardware and software, specializing in 
 								embedded systems, IoT devices, and edge AI applications. My journey in technology 
 								is driven by curiosity and the desire to create innovative solutions that bridge 
 								the digital and physical worlds.
@@ -40,13 +40,13 @@ export default function AboutSection() {
 							
 							<p>
 								With expertise in Python, C, and various embedded platforms like Raspberry Pi, 
-								I enjoy building projects that solve real-world problems. Whether it's developing 
+								I enjoy building projects that solve real-world problems. Whether it&apos;s developing 
 								IoT sensors, creating automation systems, or exploring robotics with ROS2, 
-								I'm always excited to learn and experiment with new technologies.
+								I&apos;m always excited to learn and experiment with new technologies.
 							</p>
 							
 							<p>
-								When I'm not coding, you'll find me tinkering with hardware, exploring the latest 
+								When I&apos;m not coding, you&apos;ll find me tinkering with hardware, exploring the latest 
 								in edge computing, or sharing my learning journey through blog posts and project 
 								documentation. I believe in continuous learning and open-source collaboration.
 							</p>
