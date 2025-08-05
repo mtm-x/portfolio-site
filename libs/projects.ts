@@ -32,38 +32,6 @@ export const projects = [
     githubUrl: "https://github.com/mtm-x/yeagerists-round2",
     technologies: ['Qt', 'QML', 'C++']
   },
-  {
-    id: 5,
-    title: "WiFi Jammer",
-    description: "Wifi jammer is a simple linux application to jam the wifi access point.",
-    image: "/portfolio/wifijam.png",
-    githubUrl: "https://github.com/mtm-x/wifijammer",
-    technologies: ['Linux', 'Network Security']
-  },
-  {
-    id: 6,
-    title: "WIFI-Jammer.py",
-    description: "A simple Python script to jam WiFi.",
-    image: "/portfolio/WiFI Jammerpy.png",
-    githubUrl: "https://github.com/mtm-x/wifijammer-python-script",
-    technologies: ['Python', 'Network Security']
-  },
-  {
-    id: 7,
-    title: "WIFI-Jammer.sh",
-    description: "A simple shell script to jam WiFi.",
-    image: "/portfolio/WiFI Jammersh.png",
-    githubUrl: "https://github.com/mtm-x/wifi-jammer-script",
-    technologies: ['Shell Script', 'Network Security']
-  },
-  {
-    id: 8,
-    title: "debloater.py",
-    description: "A simple Python script to remove system apps from Android devices.",
-    image: "/portfolio/debloaterscript.png",
-    githubUrl: "https://github.com/mtm-x/android-debloater",
-    technologies: ['Python', 'Android', 'ADB']
-  },
 ];
 
 // TypeScript interface for better type safety

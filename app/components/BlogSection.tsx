@@ -91,6 +91,85 @@ You can view my official certificate and the competition details through the Qt 
 	},
 	{
 		id: 4,
+		title: "WiFi Jammer - Linux Application",
+		date: "2024-11-10",
+		category: "Project",
+		excerpt: "A simple Linux application for WiFi access point jamming using network security techniques.",
+		content: `Built a WiFi jammer application for Linux that can jam WiFi access points. This was a learning project to understand network security concepts and how wireless networks can be disrupted.
+
+The application targets WiFi access points and disrupts their normal operation. It taught me a lot about network protocols, wireless security, and how networks can be vulnerable to certain types of attacks.
+
+Key features:
+- Linux-based WiFi jamming functionality
+- Simple command-line interface
+- Network security research tool
+- Educational purposes only
+
+This project helped me understand the importance of network security and how to protect against such attacks. It's important to note this should only be used for educational purposes and on networks you own or have permission to test.`,
+		tags: ["Linux", "Network Security", "WiFi", "C++"]
+	},
+	{
+		id: 5,
+		title: "WiFi Jammer Python Script",
+		date: "2024-10-30",
+		category: "Project",
+		excerpt: "A Python implementation of WiFi jamming functionality for network security research and learning.",
+		content: `Created a Python script version of my WiFi jammer project. This was part of exploring different programming approaches to network security tools.
+
+The Python version offers:
+- Clean, readable code structure
+- Easy to modify and extend
+- Cross-platform compatibility
+- Good for learning network programming concepts
+
+Working with Python for network operations taught me about socket programming, packet manipulation, and how different programming languages handle low-level network operations differently than C++.
+
+This project reinforced my understanding of both Python programming and network security fundamentals. It's designed purely for educational use and understanding how wireless networks operate.`,
+		tags: ["Python", "Network Security", "WiFi", "Scripting"]
+	},
+	{
+		id: 6,
+		title: "WiFi Jammer Shell Script",
+		date: "2024-10-25",
+		category: "Project",
+		excerpt: "A shell script implementation for WiFi jamming, exploring bash scripting and system administration.",
+		content: `Wrote a shell script version of the WiFi jammer to explore bash scripting and system-level network operations. This was interesting because it showed how much you can accomplish with simple shell commands.
+
+The shell script approach taught me:
+- Advanced bash scripting techniques
+- System administration concepts
+- How to interact with network interfaces from command line
+- Linux networking tools and utilities
+
+It's fascinating how different tools can achieve similar results. The shell script version is probably the most lightweight of all my WiFi jammer implementations, requiring minimal dependencies and running efficiently on any Linux system.
+
+This project improved my Linux system administration skills and deepened my understanding of how network tools work at the command line level.`,
+		tags: ["Shell Script", "Bash", "Linux", "Network Security"]
+	},
+	{
+		id: 7,
+		title: "Android Debloater Python Script",
+		date: "2024-10-15",
+		category: "Project",
+		excerpt: "A Python script to remove system apps from Android devices using ADB commands and automation.",
+		content: `Developed a Python script that automates the removal of system apps from Android devices. This was born out of frustration with bloatware on Android phones and wanting to clean them up programmatically.
+
+The script uses ADB (Android Debug Bridge) to communicate with Android devices and remove unwanted system applications that can't normally be uninstalled through the regular interface.
+
+Features implemented:
+- Automated ADB command execution
+- Safe app removal with backups
+- Device detection and connection handling
+- Batch processing of multiple apps
+- User-friendly command line interface
+
+This project taught me about Android's system architecture, ADB protocol, and how to build useful automation tools. It also reinforced my Python skills, especially working with subprocess management and command-line tools.
+
+The script has been helpful for cleaning up personal devices and understanding how Android package management works under the hood.`,
+		tags: ["Python", "Android", "ADB", "Automation", "Mobile"]
+	},
+	{
+		id: 8,
 		title: "Building a WiFi Jammer Detection System",
 		date: "2024-12-15",
 		category: "Project",
@@ -107,7 +186,7 @@ The most challenging part was optimizing the detection algorithms to minimize fa
 		tags: ["Python", "Network Security", "Qt Framework", "Shell Scripting"]
 	},
 	{
-		id: 5,
+		id: 9,
 		title: "First Steps with ROS2 and Robotics",
 		date: "2024-11-28",
 		category: "Learning",
@@ -124,7 +203,7 @@ Currently working on a simple autonomous navigation project using a simulated ro
 		tags: ["ROS2", "Robotics", "Gazebo", "Learning"]
 	},
 	{
-		id: 6,
+		id: 10,
 		title: "Completed Advanced Python Certification",
 		date: "2024-10-20",
 		category: "Achievement",
@@ -142,7 +221,7 @@ The final project involved creating a complete IoT sensor network with data visu
 		tags: ["Python", "Certification", "IoT", "Embedded Systems"]
 	},
 	{
-		id: 7,
+		id: 11,
 		title: "STM32 Development Environment Setup",
 		date: "2024-09-15",
 		category: "Learning",
@@ -338,10 +417,11 @@ export default function BlogSection() {
 										)}
 									</div>
 									
-									{/* Certificate buttons at the bottom */}
-									{(post.id === 1 || post.id === 2 || post.id === 3) && (
+									{/* Certificate buttons and GitHub links at the bottom */}
+									{(post.id === 1 || post.id === 2 || post.id === 3 || post.id === 4 || post.id === 5 || post.id === 6 || post.id === 7) && (
 										<div className="mt-4 pt-4 border-t border-gray-800">
 											<div className="flex flex-wrap gap-3">
+												{/* Certificate links */}
 												{post.id === 1 && (
 													<a 
 														href="https://drive.google.com/file/d/1K9f_vX-XXlP34EO03iPNR43R37R-Xxt2/view?usp=sharing" 
@@ -370,6 +450,48 @@ export default function BlogSection() {
 														className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 rounded-lg transition-colors"
 													>
 														Qt-athon 2024 Certificate
+													</a>
+												)}
+												
+												{/* GitHub links for project posts */}
+												{post.id === 4 && (
+													<a 
+														href="https://github.com/mtm-x/wifijammer" 
+														target="_blank" 
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 rounded-lg transition-colors"
+													>
+														View on GitHub
+													</a>
+												)}
+												{post.id === 5 && (
+													<a 
+														href="https://github.com/mtm-x/wifijammer-python-script" 
+														target="_blank" 
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 rounded-lg transition-colors"
+													>
+														View on GitHub
+													</a>
+												)}
+												{post.id === 6 && (
+													<a 
+														href="https://github.com/mtm-x/wifi-jammer-script" 
+														target="_blank" 
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 rounded-lg transition-colors"
+													>
+														View on GitHub
+													</a>
+												)}
+												{post.id === 7 && (
+													<a 
+														href="https://github.com/mtm-x/android-debloater" 
+														target="_blank" 
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 rounded-lg transition-colors"
+													>
+														View on GitHub
 													</a>
 												)}
 											</div>
