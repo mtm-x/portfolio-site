@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-// import AboutSection from '@/app/components/AboutSection';
+import AboutSection from '@/app/components/AboutSection';
 import Navigation from '@/app/components/Navigation';
-import UnderConstruction from '@/app/components/UnderConstruction';
+// import UnderConstruction from '@/app/components/UnderConstruction';
 
 export const metadata: Metadata = {
 	title: "About - Thamaraimanalan's Portfolio",
@@ -25,12 +25,9 @@ export default function AboutPage() {
 	return (
 		<main className="min-h-screen bg-black">
 			<Navigation />
-			<UnderConstruction />
-			{/* Temporarily hidden - will reveal later
 			<div className="pt-12">
 				<AboutSection />
 			</div>
-			*/}
 		</main>
 	);
 }
