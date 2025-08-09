@@ -1,7 +1,7 @@
 'use client';
 
 import { use } from 'react';
-import { blogPosts, BlogPost } from '@/libs/blogPosts';
+import { blogPosts} from '@/libs/blogPosts';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
