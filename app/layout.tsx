@@ -15,7 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Thamaraimanalan's Portfolio",
 	icons: {
-        icon: './portfolio/lotus_crop.png',
+        icon: [
+			{ url: '/favicon.png', type: 'image/png' },
+			{ url: '/portfolio/lotus_crop.png', type: 'image/png' }
+		],
+		apple: '/portfolio/lotus_crop.png',
+		shortcut: '/favicon.png'
     },
 	description:
 		'Welcome to my portfolio! I am passionate about learning Embedded systems, IoT, Edge AI, and Robotics. If it runs Python, I can make it do something cool.',
@@ -45,7 +50,7 @@ export const metadata: Metadata = {
 		siteName: 'Thamaraimanalan - Portfolio',
 		images: [
 			{
-				url: './portfolio/og.png',
+				url: '/portfolio/og.png',
 				width: 1200,
 				height: 630,
 				alt: 'Thamaraimanalan - Portfolio',

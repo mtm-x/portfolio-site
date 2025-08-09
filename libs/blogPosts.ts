@@ -1,5 +1,6 @@
 export interface BlogPost {
 	id: number;
+	slug: string;
 	title: string;
 	date: string;
 	category: 'Achievement' | 'Project' | 'Learning';
@@ -14,6 +15,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
 	{
 		id: 1,
+		slug: "nxp-aim-2025-regional-finalist",
 		title: "NXP AIM 2025 - Regional Finalist in AI Mobility Challenge",
 		date: "2025-07-28",
 		category: "Achievement",
@@ -45,6 +47,7 @@ Even though I didn't win the regional finals, I learned a ton about AI applicati
 	},
 	{
 		id: 2,
+		slug: "embedded-systems-course-learning",
 		title: "Currently Learning: Comprehensive Embedded Systems Course",
 		date: "2025-04-15",
 		category: "Learning",
@@ -72,6 +75,7 @@ The C certification was a good milestone. Now diving into pointers, which is whe
 	},
 	{
 		id: 3,
+		slug: "qt-champion-2024-third-place",
 		title: "Qt Champion 2024 - 3rd Place in Global Qt-athon Competition",
 		date: "2024-10-25",
 		category: "Achievement",
@@ -91,6 +95,7 @@ This experience has motivated me to continue contributing to the Qt community an
 	},
 	{
 		id: 4,
+		slug: "wifi-jammer-linux-application",
 		title: "WiFi Jammer - Linux Application",
 		date: "2024-11-10",
 		category: "Project",
@@ -109,6 +114,7 @@ This project helped me understand the importance of network security and how to 
 	},
 	{
 		id: 5,
+		slug: "wifi-jammer-python-script",
 		title: "WiFi Jammer Python Script",
 		date: "2024-10-30",
 		category: "Project",
@@ -127,6 +133,7 @@ This project reinforced my understanding of both Python programming. It's design
 	},
 	{
 		id: 6,
+		slug: "wifi-jammer-shell-script",
 		title: "WiFi Jammer Shell Script",
 		date: "2024-10-25",
 		category: "Project",
@@ -145,6 +152,7 @@ This project improved my Linux system administration skills and deepened my unde
 	},
 	{
 		id: 7,
+		slug: "android-debloater-python-script",
 		title: "Android Debloater Python Script",
 		date: "2024-10-15",
 		category: "Project",
@@ -161,6 +169,7 @@ The script has been helpful for cleaning up personal devices and understanding h
 	},
 	{
 		id: 8,
+		slug: "first-steps-ros2-robotics",
 		title: "First Steps with ROS2 and Robotics",
 		date: "2025-04-28",
 		category: "Learning",
@@ -178,6 +187,7 @@ Currently working on a simple autonomous navigation project using a simulated ro
 	},
 	{
 		id: 9,
+		slug: "learning-cpp-with-the-cherno",
 		title: "Learning C++ with The Cherno",
 		date: "2025-01-10",
 		category: "Learning",
@@ -199,6 +209,7 @@ The series is well-structured and perfect for someone like me who wants to under
 	},
 	{
 		id: 10,
+		slug: "smart-traffic-management-techforsociety-hackathon",
 		title: "Smart Traffic Management - TechForSociety Hackathon by Siemens & NASSCOM Foundation",
 		date: "2024-10-01",
 		category: "Achievement",

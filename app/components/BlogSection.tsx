@@ -2,10 +2,10 @@
 
 import { useState } from 'react';
 import { blogPosts} from '@/libs/blogPosts';
+import Link from 'next/link';
 
 export default function BlogSection() {
 	const [selectedCategory, setSelectedCategory] = useState<string>('All');
-	const [expandedPost, setExpandedPost] = useState<number | null>(null);
 
 	const categories = ['All', 'Achievement', 'Project', 'Learning'];
 
@@ -74,67 +74,15 @@ export default function BlogSection() {
 								</div>
 							</div>
 
-							<h3 className="text-xl font-bold text-white mb-3 hover:text-gray-300 transition-colors">
-								{post.title}
-							</h3>
+							<Link href={`/blog/${post.slug}`}>
+								<h3 className="text-xl font-bold text-white mb-3 hover:text-gray-300 transition-colors cursor-pointer">
+									{post.title}
+								</h3>
+							</Link>
 
 							<p className="text-gray-400 mb-4 leading-relaxed">
 								{post.excerpt}
 							</p>
-
-							{expandedPost === post.id && (
-								<div className="mb-4 p-4 bg-black rounded-lg border border-gray-800">
-									<div className="text-gray-300 leading-relaxed">
-										{post.content.split('\n\n').map((paragraph, index) => (
-											<div key={index} className="mb-4">
-												{paragraph.split('\n').map((line, lineIndex) => (
-													<div key={lineIndex} className={line.trim() ? "mb-1" : "mb-2"}>
-														{line.trim() || <br />}
-													</div>
-												))}
-											</div>
-										))}
-									</div>
-									
-									{/* Certificate, GitHub, and Announcement links */}
-									{(post.certificateUrl || post.githubUrl || post.announcementUrl) && (
-										<div className="mt-4 pt-4 border-t border-gray-800">
-											<div className="flex flex-wrap gap-3">
-												{post.certificateUrl && (
-													<a 
-														href={post.certificateUrl} 
-														target="_blank" 
-														rel="noopener noreferrer"
-														className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 rounded-lg transition-colors"
-													>
-														View Certificate
-													</a>
-												)}
-												{post.githubUrl && (
-													<a 
-														href={post.githubUrl} 
-														target="_blank" 
-														rel="noopener noreferrer"
-														className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 rounded-lg transition-colors"
-													>
-														View on GitHub
-													</a>
-												)}
-												{post.announcementUrl && (
-													<a 
-														href={post.announcementUrl} 
-														target="_blank" 
-														rel="noopener noreferrer"
-														className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 rounded-lg transition-colors"
-													>
-														Official Announcement
-													</a>
-												)}
-											</div>
-										</div>
-									)}
-								</div>
-							)}
 
 							<div className="flex flex-wrap items-center justify-between">
 								<div className="flex flex-wrap gap-2 mb-3 sm:mb-0">
@@ -148,14 +96,12 @@ export default function BlogSection() {
 									))}
 								</div>
 								
-								<button
-									onClick={() => setExpandedPost(
-										expandedPost === post.id ? null : post.id
-									)}
-									className="text-sm text-white hover:text-gray-300 transition-colors font-medium"
+								<Link
+									href={`/blog/${post.slug}`}
+									className="text-sm text-blue-400 hover:text-blue-300 transition-colors font-medium"
 								>
-									{expandedPost === post.id ? 'Read Less' : 'Read More'} →
-								</button>
+									View Full Post →
+								</Link>
 							</div>
 						</article>
 					))}
