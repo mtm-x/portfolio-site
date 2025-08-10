@@ -1,6 +1,7 @@
 // components/ProjectsSection.tsx
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { projects } from '../../libs/projects'; // Fixed import path
 
 export default function ProjectsSection() {
@@ -47,15 +48,37 @@ export default function ProjectsSection() {
                   </div>
                 )}
                 
-                <div className="flex gap-2">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 font-medium text-sm sm:text-base"
-                  >
-                    View Project →
-                  </a>
+                <div className="flex flex-wrap gap-3">
+                  {/* Prioritize blog link if available */}
+                  {project.blogSlug ? (
+                    <Link
+                      href={`/blog/${project.blogSlug}`}
+                      className="text-blue-400 hover:text-blue-300 font-medium text-sm sm:text-base"
+                    >
+                      Read More →
+                    </Link>
+                  ) : (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 font-medium text-sm sm:text-base"
+                    >
+                      View Project →
+                    </a>
+                  )}
+                  
+                  {/* Always show GitHub link, but as secondary if blog exists */}
+                  {project.blogSlug && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-gray-300 font-medium text-sm sm:text-base"
+                    >
+                      GitHub →
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

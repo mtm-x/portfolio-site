@@ -239,5 +239,80 @@ Working on this project has deepened my understanding of computer vision, IoT sy
 		tags: ["Deep Learning", "YOLO", "IoT", "Raspberry Pi", "QML", "Python", "Computer Vision", "Hackathon"],
 		githubUrl: "https://github.com/mtm-x/STM"
 	},
+	{
+		id: 11,
+		slug: "droid-debloat-qt-desktop-application",
+		title: "Droid Debloat - Qt Desktop Application",
+		date: "2024-09-20",
+		category: "Project",
+		excerpt: "A desktop application built with Qt Framework to remove bloatware from Android devices, making device management easier and more efficient.",
+		content: `Droid Debloat is a desktop application I built using the Qt Framework to help users remove unwanted system apps (bloatware) from their Android devices. This project was born out of my own frustration with the amount of pre-installed apps that come with Android devices and can't be easily removed through normal means.
+
+The Problem:
+Most Android devices come pre-loaded with numerous system apps that users might not want or need. These apps often can't be uninstalled through the regular interface, leading to cluttered devices and wasted storage space.
+
+My Solution:
+I created a user-friendly desktop application that uses ADB (Android Debug Bridge) commands to safely remove these unwanted system applications. The Qt Framework provided the perfect foundation for creating a clean, intuitive interface.
+
+Key Features:
+• Clean Qt-based graphical user interface
+• Safe removal of Android system applications
+• ADB integration for device communication
+• User-friendly design with clear instructions
+• Cross-platform compatibility (Windows, Linux, macOS)
+
+Technical Implementation:
+• Qt Framework for the desktop application interface
+• C++ for core application logic
+• ADB command integration for Android device communication
+• Safe app removal procedures to prevent system damage
+
+What I Learned:
+This project taught me a lot about desktop application development with Qt, Android system architecture, and ADB protocols. It also reinforced the importance of creating tools that solve real-world problems that I and others face daily.
+
+The application has been helpful for cleaning up personal devices and understanding how Android package management works at a deeper level. It's satisfying to create a tool that makes device management more accessible to regular users.`,
+		tags: ["Qt Framework", "C++", "Android", "ADB", "Desktop Application", "System Administration"],
+		githubUrl: "https://github.com/mtm-x/DroidDebloat"
+	},
+	{
+		id: 12,
+		slug: "project-eye-ai-assistive-system",
+		title: "Project Eye - AI-Powered Assistive System",
+		date: "2024-08-15",
+		category: "Project",
+		excerpt: "An innovative AI-powered assistive system designed to help people who are blind navigate and interact with their surroundings using computer vision and artificial intelligence.",
+		content: `Project Eye is an AI-powered assistive system I developed to help people who are blind navigate and interact with their surroundings more independently. This project represents my commitment to using technology for social good and making AI accessible to those who need it most.
+
+The Vision:
+The goal was to create an intelligent system that could serve as digital eyes for visually impaired individuals, helping them understand their environment and navigate safely through the world.
+
+Project Overview:
+Project Eye uses advanced computer vision and AI technologies to analyze the user's surroundings in real-time and provide audio feedback about objects, obstacles, people, and important environmental information.
+
+Key Features Being Developed:
+• Real-time object detection and recognition
+• Obstacle detection and path navigation assistance
+• Text reading capabilities for signs and documents
+• Person recognition and tracking
+• Distance estimation for detected objects
+• Audio feedback system for hands-free interaction
+
+Technical Implementation:
+• Computer Vision: Advanced object detection algorithms
+• AI/ML: Machine learning models for scene understanding
+• Audio Processing: Text-to-speech for user feedback
+• Real-time Processing: Optimized for low-latency response
+• Accessibility Design: Built with accessibility principles in mind
+
+Impact and Purpose:
+This project addresses a real need in the accessibility space. By leveraging AI and computer vision, Project Eye aims to provide greater independence and confidence to visually impaired users in their daily activities.
+
+What I'm Learning:
+Working on Project Eye has deepened my understanding of computer vision, accessibility design principles, and the importance of inclusive technology. It's also taught me about the challenges of real-time AI processing and user experience design for assistive technologies.
+
+This project continues to evolve as I learn more about the needs of the visually impaired community and advance my skills in AI and computer vision technologies.`,
+		tags: ["AI", "Computer Vision", "Accessibility", "Assistive Technology", "Machine Learning", "Social Impact"],
+		githubUrl: "https://github.com/mtm-x/Project.Eye"
+	},
 	
 ];
