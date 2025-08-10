@@ -71,7 +71,7 @@ Having instructors from Google is pretty cool because they bring real industry p
 
 The C certification was a good milestone. Now diving into pointers, which is where things get interesting. The combination of all these topics should give me a solid foundation for embedded projects.`,
 		tags: ["Embedded Systems", "C Programming", "C Certification", "Python", "AArch64", "FPGA", "Pyjamabrah"],
-		certificateUrl: "https://drive.google.com/file/d/1BJ3lXz0yCHVueuUFquB8Hi46MNUon50J/view?usp=sharing"
+		certificateUrl: "https://drive.google.com/drive/folders/1XsuvZvTWCEvBn0iHV7F41GOl6QI7UUVU?usp=sharing"
 	},
 	{
 		id: 3,
